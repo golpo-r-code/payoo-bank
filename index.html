@@ -23,10 +23,8 @@
 
     <link rel="stylesheet" href="./styles/font.css" />
   </head>
-  <body class="bg-stone-900 max-w-full h-screen">
-    <div
-      class="w-md h-screen bg-white mx-auto flex items-center justify-center"
-    >
+  <body class="bg-stone-900 max-w-full h-screen outfit">
+    <div class="w-4/12 h-screen bg-white mx-auto flex flex-col justify-center">
       <!-- logo here  -->
       <div class="logo-section relative flex items-center justify-center">
         <div class="absolute w-44 top-0 z-0">
@@ -34,6 +32,28 @@
         </div>
         <div class="mt-4 z-10">
           <img class="w-14" src="./assets/Group.png" alt="" />
+        </div>
+      </div>
+      <!-- login section  -->
+
+      <div class="bg-base-100 shadow-2xl mt-5 mx-5">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label font-medium text-sm text-black">Mobile Number</label>
+            <input
+              type="number"
+              class="input w-full"
+              placeholder="Enter your number"
+            />
+            <label class="label font-medium text-sm text-black">4 Digit Pin</label>
+            <input
+              type="password"
+              class="input w-full"
+              placeholder="Enter 4 Digit Pin"
+            />
+            <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+            <button class="btn bg-blue-700 text-white mt-4 text-xl rounded-3xl">Login</button>
+          </fieldset>
         </div>
       </div>
     </div>
