@@ -15,8 +15,8 @@
     <!-- font awesome cdn link here -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-2g9b9b6127149229c0803c2b3e3f12735b2d3f2c1c34a3e1d3e7e4a1a7f1e1a3b3e7e1a7b1a3c2a1a3c2a1a3c2a1a3"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -24,10 +24,92 @@
     <link rel="stylesheet" href="./styles/font.css" />
   </head>
   <body class="bg-stone-900 max-w-full h-screen outfit">
-    <div
-      class="max-w-sm h-screen bg-white mx-auto flex flex-col justify-center"
-    >
-      <h1>this is me ashutosh roy abhi</h1>
+    <div class="max-w-sm h-screen bg-white mx-auto">
+      <header class="border-b shadow-md">
+        <nav class="flex items-center justify-between px-5 py-4">
+          <!-- left nav  -->
+          <div class="flex items-center justify-center">
+            <!-- logo  -->
+            <div>
+              <img class="max-w-14" src="./assets/Group.png" alt="" />
+            </div>
+            <!-- balance  -->
+            <div>
+              <h2 class="text-xl font-semibold">$<span>45000</span></h2>
+              <p class="text-sm text-stone-400">Available Balance</p>
+            </div>
+          </div>
+          <!-- right nav -->
+          <div>
+            <button class="btn bg-transparent border-stone-400">
+              <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i
+              >Logout
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- greeting section  -->
+        <section>
+          <div class="py-8 px-5">
+            <h3 class="font-bold text-2xl">🔥 Welcome to Payooo!</h3>
+            <p class="text-stone-400 mt-2">
+              Enjoy easy and convenient financial services with us. Cashout
+              charge is low and
+            </p>
+          </div>
+        </section>
+
+        <!-- card container section  -->
+        <section>
+          <div class="grid grid-cols-3 px-4 gap-3">
+            <!-- card 1  -->
+            <div
+              class="flex flex-col items-center justify-center border border-stone-400 p-3 cursor-pointer rounded-md hover:bg-stone-200 hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-in-out"
+            >
+              <img src="./assets/wallet1.png" alt="" />
+              <p class="text-sm mt-1">Add Money</p>
+            </div>
+            <!-- box2  -->
+            <div
+              class="flex flex-col items-center justify-center border border-stone-400 p-3 cursor-pointer rounded-md hover:bg-stone-200 hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-in-out"
+            >
+              <img src="./assets/send1.png" alt="" />
+              <p class="text-sm mt-1">Cashout</p>
+            </div>
+            <!-- box 3 -->
+            <div
+              class="flex flex-col items-center justify-center border border-stone-400 p-1 cursor-pointer rounded-md hover:bg-stone-200 hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-in-out"
+            >
+              <img src="./assets/money1.png" alt="" />
+              <p class="text-sm mt-1">Transfer Money</p>
+            </div>
+            <!-- box 4 -->
+            <div
+              class="flex flex-col items-center justify-center border border-stone-400 p-3 cursor-pointer rounded-md hover:bg-stone-200 hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-in-out"
+            >
+              <img src="./assets/bonus1.png" alt="" />
+              <p class="text-sm mt-1">Get Bonus</p>
+            </div>
+
+            <!-- box5 -->
+            <div
+              class="flex flex-col items-center justify-center border border-stone-400 p-3 cursor-pointer rounded-md hover:bg-stone-200 hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-in-out"
+            >
+              <img src="./assets/purse1.png" alt="" />
+              <p class="text-sm mt-1">Pay Bill</p>
+            </div>
+            <!-- box 6  -->
+            <div
+              class="flex flex-col items-center justify-center border border-stone-400 p-3 cursor-pointer rounded-md hover:bg-stone-200 hover:scale-x-110 hover:scale-y-110 transition duration-300 ease-in-out"
+            >
+              <img src="./assets/transaction1.png" alt="" />
+              <p class="text-sm mt-1">Transactions</p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
     <script src="./scripts/login.js"></script>
