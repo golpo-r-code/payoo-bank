@@ -23,9 +23,9 @@
 
     <link rel="stylesheet" href="./styles/font.css" />
   </head>
-  <body class="bg-stone-900 max-w-full h-screen outfit">
-    <div class="max-w-sm h-screen bg-white mx-auto">
-      <header class="border-b shadow-md">
+  <body class="bg-stone-900 max-w-full outfit">
+    <div class="max-w-sm bg-white mx-auto">
+      <header class="border-b-2 border-stone-400 shadow-md">
         <nav class="flex items-center justify-between px-5 py-4">
           <!-- left nav  -->
           <div class="flex items-center justify-center">
@@ -106,6 +106,61 @@
             >
               <img src="./assets/transaction1.png" alt="" />
               <p class="text-sm mt-1">Transactions</p>
+            </div>
+          </div>
+        </section>
+        <!-- add money section  -->
+        <section class="px-4 py-5 mt-5">
+          <h3 class="text-xl font-bold">Add Money</h3>
+          <!-- add money form  -->
+          <div class="bg-base-100 shadow-2xl my-8 rounded-xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label font-medium text-sm text-black"
+                  >Select A Bank</label
+                >
+                <select class="select">
+                  <option disabled selected>Select A Bank</option>
+                  <option>Bikash</option>
+                  <option>Nagad</option>
+                  <option>Mcash</option>
+                  <option>DBBL</option>
+                </select>
+                <label class="label font-medium text-sm text-black"
+                  >Bank Account Number</label
+                >
+                <input
+                  type="number"
+                  class="input w-full"
+                  placeholder="Enter 11 digit account number"
+                  required
+                />
+                <label class="label font-medium text-sm text-black"
+                  >Amount to Add</label
+                >
+                <input
+                  type="number"
+                  class="input w-full"
+                  placeholder="Add Amount to withdraw"
+                  required
+                />
+                <label class="label font-medium text-sm text-black"
+                  >Pin Number</label
+                >
+                <input
+                  type="password"
+                  class="input w-full"
+                  placeholder="Enter 4 digit pin number"
+                  required
+                />
+
+                <button
+                  id="loginBtn"
+                  class="btn bg-blue-700 text-white mt-4 text-xl rounded-3xl"
+                >
+                  Add Money
+                </button>
+              </fieldset>
             </div>
           </div>
         </section>
