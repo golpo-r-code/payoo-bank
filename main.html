@@ -35,7 +35,9 @@
             </div>
             <!-- balance  -->
             <div>
-              <h2 class="text-xl font-semibold">$<span>45000</span></h2>
+              <h2 class="text-xl font-semibold">
+                $<span class="main-balance">45000</span>
+              </h2>
               <p class="text-sm text-stone-400">Available Balance</p>
             </div>
           </div>
@@ -130,6 +132,7 @@
                   >Bank Account Number</label
                 >
                 <input
+                id="account-number"
                   type="number"
                   class="input w-full"
                   placeholder="Enter 11 digit account number"
@@ -139,6 +142,7 @@
                   >Amount to Add</label
                 >
                 <input
+                  id="add-amount"
                   type="number"
                   class="input w-full"
                   placeholder="Add Amount to withdraw"
@@ -148,6 +152,7 @@
                   >Pin Number</label
                 >
                 <input
+                id="pin-number"
                   type="password"
                   class="input w-full"
                   placeholder="Enter 4 digit pin number"
@@ -155,7 +160,7 @@
                 />
 
                 <button
-                  id="loginBtn"
+                  id="add-money-btn"
                   class="btn bg-blue-700 text-white mt-4 text-xl rounded-3xl"
                 >
                   Add Money
@@ -167,6 +172,6 @@
       </main>
     </div>
 
-    <script src="./scripts/login.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
